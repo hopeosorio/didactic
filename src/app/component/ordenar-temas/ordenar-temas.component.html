@@ -1,0 +1,106 @@
+<div class="container-fluid p-2 bg-success text-white text-left">
+  <h1><img routerLink="/home" src="assets/imagenes/logo-didactic.png" style="width: 5%; height: 5%; cursor: pointer;">Crear Curso</h1>
+  </div>
+  <div class="card">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/lista" routerLinkActive="active">Lista</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/registro" routerLinkActive="active">Registro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/agregar-temas" routerLinkActive="active">Agregar Temas al Curso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/ordenar-temas" routerLinkActive="active">Ordenar Temas</a>
+          </li>
+        </ul>
+      </div>
+    <div style="padding: 20px">
+      <form>
+    <br>
+    <div class="form-group row">
+     <label for="colFormLabel" class="col-sm-2 col-form-label" style="font-weight: 600;" >Nombre del Curso</label>
+      <div class="col-sm-10 ">
+        <select id="orde">
+            <option>Este es el nombre del curso 1</option>
+            <option>Este es el nombre del curso 2</option>
+            <option>Este es el nombre del curso 3</option>
+            <option>Este es el nombre del curso 4</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <table class="table table-bordered" width="95%">
+        <thead>
+          <tr>
+            <th>Prioridad</th>
+            <th>Tema</th>
+            <th>Descripcion</th>
+            <th> </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Diseño</td>
+            <td>Creacion de diseños y sus atributos</td>
+            <td> <button type="button" class="btn btn-outline-danger">
+              Eliminar</button>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Diseño</td>
+            <td>Creacion de diseños y sus atributos</td>
+            <td> <button type="button" class="btn btn-outline-danger">
+              Eliminar</button>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Diseño</td>
+            <td>Creacion de diseños y sus atributos</td>
+            <td> <button type="button" class="btn btn-outline-danger">
+              Eliminar</button>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Diseño</td>
+            <td>Creacion de diseños y sus atributos</td>
+            <td> <button type="button" class="btn btn-outline-danger">
+            Eliminar</button>
+          </tr>
+        </tbody>
+      </table>
+
+    <button style="padding: 5px;" type="button" onclick="alert('Se ha guardado correctamente')"  class="btn btn-outline-success">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+    </svg> Guardar </button>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+        <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+      </svg>Cancelar</button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Salir</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ¿Desea salir sin guardar?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">No</button>
+            <button type="button" class="btn btn-outline-danger">Si</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </form>
+</div>
